@@ -17,7 +17,6 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="work.html" class="nav-link">Work</a></li>
                 <li><a href="shop.html" class="nav-link">Shop</a></li>
                 <li><a href="contact.html" class="nav-link active">Get in Touch</a></li>
             </ul>
@@ -29,157 +28,153 @@
         </div>
     </nav>
 
-    <!-- Contact Hero -->
-    <section class="page-hero">
-        <div class="page-hero-content">
-            <h1>Get in Touch</h1>
-            <p>Let's create something beautiful together</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-page">
-        <div class="container">
-            <div class="contact-intro">
-                <h2>I'd Love to Hear From You</h2>
-                <p>Whether you're interested in booking a session, have questions about my work, or just want to say hello, I'm here to help. Fill out the form below and I'll get back to you as soon as possible.</p>
+    <!-- Booking Section -->
+    <section class="booking-page">
+        <div class="booking-container">
+            <!-- Introduction Text -->
+            <div class="booking-intro">
+                <h1>Hello bride-to-be!</h1>
+                <p>Thank you so much for your interest in working with me!</p>
+                
+                <p>With over 15 years of experience as a bridal henna artist, I've come to value something far deeper than just the design itself—I value the process. I pour hours of intentional artistry into each bridal henna, and over time, I've learned that the experience is most fulfilling when it's shared with clients who truly appreciate, understand and are looking for that.</p>
+                
+                <p>Whether you're drawn to something incredibly simple and minimal or a fully custom, detailed piece, I find the most joy working with brides who are willing to give the art the time it needs, and who see the mehendi session not just as a task—but as a moment of stillness, creativity, and celebration.</p>
+                
+                <p>For 2026 and beyond, I'll be significantly reducing the number of bridal bookings I take on. Instead, I'm curating each experience with care and only booking with brides where we both feel like we're the right fit—for your style, your energy, and your approach to this special part of your wedding.</p>
+                
+                <p class="booking-final">If this resonates with you, I'd love to get to know you better. Please take a moment to complete the questions below so we can explore if this feels aligned.</p>
             </div>
 
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-section">
-                    <form class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                        </div>
+            <!-- Booking Form -->
+            <form class="booking-form" id="bookingForm">
+                <!-- Basic Info -->
+                <div class="form-section">
+                    <h2>Tell Me About Yourself</h2>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service</option>
-                                <option value="bridal">Bridal Henna</option>
-                                <option value="special">Special Occasion</option>
-                                <option value="custom">Custom Design</option>
-                                <option value="party">Henna Party</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+                    <div class="form-group">
+                        <label for="weddingDate">Expected Date of Wedding *</label>
+                        <input type="date" id="weddingDate" name="weddingDate" required>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="date">Preferred Date</label>
-                            <input type="date" id="date" name="date">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Tell Me More</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Share your vision, event details, or any questions you have..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+                    <div class="form-group">
+                        <label for="location">Location *</label>
+                        <input type="text" id="location" name="location" placeholder="City, State" required>
+                    </div>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="contact-info-section">
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">✉</div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p><a href="mailto:hello@hennabydivya.com">hello@hennabydivya.com</a></p>
-                            </div>
+                <!-- Calendar Section -->
+                <div class="form-section">
+                    <h2>Expected Date of Mehndi *</h2>
+                    <p class="calendar-instructions">Select up to 3 preferred dates in order of priority. Your first choice will appear darkest.</p>
+                    
+                    <div class="calendar-wrapper">
+                        <div class="calendar-header">
+                            <button type="button" class="calendar-nav" id="prevMonth">‹</button>
+                            <h3 id="currentMonth"></h3>
+                            <button type="button" class="calendar-nav" id="nextMonth">›</button>
                         </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">✆</div>
-                            <div class="contact-text">
-                                <h3>Phone</h3>
-                                <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-                            </div>
+                        <div class="calendar-grid" id="calendarGrid"></div>
+                        <div class="calendar-legend">
+                            <span class="legend-item"><span class="legend-dot booked"></span> Already Booked</span>
+                            <span class="legend-item"><span class="legend-dot priority-1"></span> 1st Choice</span>
+                            <span class="legend-item"><span class="legend-dot priority-2"></span> 2nd Choice</span>
+                            <span class="legend-item"><span class="legend-dot priority-3"></span> 3rd Choice</span>
                         </div>
+                    </div>
+                    
+                    <input type="hidden" id="selectedDates" name="selectedDates">
+                </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">⌚</div>
-                            <div class="contact-text">
-                                <h3>Hours</h3>
-                                <p>By Appointment Only</p>
-                                <p class="hours-detail">Mon - Sat: 10am - 7pm</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-text">
-                                <h3>Location</h3>
-                                <p>Available for travel</p>
-                                <p class="hours-detail">Serving [Your Area]</p>
-                            </div>
+                <!-- Session Details -->
+                <div class="form-section">
+                    <h2>Session Preferences</h2>
+                    
+                    <div class="form-group">
+                        <label>How much time are you able to dedicate to your bridal henna session? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="sessionTime" value="under-4" required>
+                                <span>Less than 4 hours</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="sessionTime" value="4-5">
+                                <span>4–5 hours</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="sessionTime" value="6-7">
+                                <span>6–7 hours (willing to prioritize this time)</span>
+                            </label>
                         </div>
                     </div>
 
-                    <!-- Social Links -->
-                    <div class="social-section">
-                        <h3>Follow My Work</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link" title="Instagram">
-                                <span class="social-icon">📷</span>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="#" class="social-link" title="Facebook">
-                                <span class="social-icon">f</span>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="#" class="social-link" title="Pinterest">
-                                <span class="social-icon">📌</span>
-                                <span>Pinterest</span>
-                            </a>
+                    <div class="form-group">
+                        <label>Do you have a budget in mind for your bridal henna? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="budget" value="under-500" required>
+                                <span>Under $500</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="budget" value="500-700">
+                                <span>$500–$700</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="budget" value="700-1000">
+                                <span>$700–$1000</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="budget" value="1000-plus">
+                                <span>$1000+</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="budget" value="open">
+                                <span>I'm not sure yet, but I'm open to discussing based on what suits my style and vision</span>
+                            </label>
                         </div>
                     </div>
 
-                    <!-- FAQ Quick Links -->
-                    <div class="faq-section">
-                        <h3>Quick Answers</h3>
-                        <div class="faq-list">
-                            <div class="faq-item">
-                                <strong>How far in advance should I book?</strong>
-                                <p>For bridal henna, I recommend booking 3-6 months in advance. For other services, 2-4 weeks notice is ideal.</p>
-                            </div>
-                            <div class="faq-item">
-                                <strong>How long does henna last?</strong>
-                                <p>Typically 1-3 weeks, depending on placement and aftercare.</p>
-                            </div>
-                            <div class="faq-item">
-                                <strong>Do you travel for events?</strong>
-                                <p>Yes! Travel fees may apply depending on location.</p>
-                            </div>
+                    <div class="form-group">
+                        <label>What length do you envision for your bridal henna? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="coverage" value="short" required>
+                                <span>Short (till wrists & backs of hands)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="coverage" value="medium">
+                                <span>Medium Coverage (mid-way up forearms)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="coverage" value="full">
+                                <span>Full Coverage (till elbows)</span>
+                            </label>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <button type="submit" class="booking-submit">Submit Booking Request</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Henna By Divya. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="booking-calendar.js"></script>
     <script src="gallery-loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

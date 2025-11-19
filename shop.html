@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -17,7 +18,6 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="work.html" class="nav-link">Work</a></li>
                 <li><a href="shop.html" class="nav-link active">Shop</a></li>
                 <li><a href="contact.html" class="nav-link">Get in Touch</a></li>
             </ul>
@@ -29,183 +29,186 @@
         </div>
     </nav>
 
-    <!-- Shop Hero -->
-    <section class="page-hero">
-        <div class="page-hero-content">
-            <h1>Shop</h1>
-            <p>Premium henna products and art pieces</p>
+    <!-- Hero Section -->
+    <section class="shop-hero">
+        <div class="shop-hero-content">
+            <h1 class="shop-hero-title">Premium Henna Cone</h1>
+            <p class="shop-hero-subtitle">Handcrafted artistry in every cone</p>
         </div>
     </section>
 
-    <!-- Shop Section -->
-    <section class="shop-page">
-        <div class="container">
-            <!-- Products Grid -->
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Premium Henna Cone</span>
-                        </div>
-                        <div class="product-badge">Best Seller</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Premium Henna Cones</h3>
-                        <p class="product-description">Natural, organic henna cones for professional quality designs</p>
-                        <div class="product-footer">
-                            <span class="product-price">$15.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Main Product Images -->
+    <section class="shop-visual-section" data-scroll-section>
+        <div class="shop-image-trio">
+            <img src="shop-content/henna-cone-main.jpg" alt="Premium Henna Cone">
+            <img src="shop-content/henna-cone-2.jpg" alt="Henna Cone Detail">
+            <img src="shop-content/henna-cone-3.jpg" alt="Henna Application">
+        </div>
+    </section>
 
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Henna Oil</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Henna Essential Oil</h3>
-                        <p class="product-description">Deepen color and extend longevity of your henna design</p>
-                        <div class="product-footer">
-                            <span class="product-price">$20.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Feature 1: Natural Ingredients -->
+    <section class="shop-feature-section" data-scroll-section>
+        <div class="shop-feature-grid">
+            <div class="shop-feature-text">
+                <h2>100% Natural. Zero Compromises.</h2>
+                <p>Crafted with pure, organic ingredients sourced from trusted suppliers. No chemicals. No additives. Just the ancient art of henna, perfected.</p>
+            </div>
+            <div class="shop-feature-image">
+                <img src="shop-content/henna-cone-2.jpg" alt="Natural ingredients">
+            </div>
+        </div>
+    </section>
 
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Stencil Set</span>
-                        </div>
-                        <div class="product-badge">New</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Henna Stencil Set</h3>
-                        <p class="product-description">Collection of traditional and modern design stencils</p>
-                        <div class="product-footer">
-                            <span class="product-price">$25.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Feature 2: Rich Color -->
+    <section class="shop-feature-section alt" data-scroll-section>
+        <div class="shop-feature-grid">
+            <div class="shop-feature-image">
+                <img src="shop-content/henna-cone-3.jpg" alt="Rich, deep stain">
+            </div>
+            <div class="shop-feature-text">
+                <h2>A Stain That Tells Your Story</h2>
+                <p>Experience rich, deep color that lasts 1-3 weeks. From warm orange tones to deep mahogany, watch your henna transform and deepen with time.</p>
+            </div>
+        </div>
+    </section>
 
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Art Print</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Limited Edition Print</h3>
-                        <p class="product-description">High-quality art print of signature henna design</p>
-                        <div class="product-footer">
-                            <span class="product-price">$45.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Feature Grid -->
+    <section class="shop-benefits-section" data-scroll-section>
+        <h2 class="benefits-title">Why Choose Our Henna?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <h3>All Natural</h3>
+                <p>Pure botanical ingredients, ethically sourced and freshly prepared</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Artist Approved</h3>
+                <p>Perfect consistency for detailed work, from fine lines to bold designs</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Long Lasting</h3>
+                <p>Stains that endure 1-3 weeks with proper care and application</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Safe & Gentle</h3>
+                <p>Dermatologically tested and safe for all skin types</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Stay Fresh</h3>
+                <p>6-month shelf life when stored properly in your freezer</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Made with Love</h3>
+                <p>Handcrafted in small batches with care and intention</p>
+            </div>
+        </div>
+    </section>
 
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Starter Kit</span>
-                        </div>
-                        <div class="product-badge">Bundle</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Beginner Starter Kit</h3>
-                        <p class="product-description">Everything you need to start your henna journey</p>
-                        <div class="product-footer">
-                            <span class="product-price">$60.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Specs Section -->
+    <section class="shop-specs-section" data-scroll-section>
+        <h2>The Details</h2>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <span class="spec-label">Net Weight</span>
+                <span class="spec-value">30g</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Shelf Life</span>
+                <span class="spec-value">6 months refrigerated</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Stain Duration</span>
+                <span class="spec-value">1-3 weeks</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Application Time</span>
+                <span class="spec-value">Leave on 4-6 hours</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Origin</span>
+                <span class="spec-value">USA</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Type</span>
+                <span class="spec-value">Traditional cone</span>
+            </div>
+        </div>
+    </section>
 
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Guidebook</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Henna Design Guidebook</h3>
-                        <p class="product-description">Digital guidebook with 50+ exclusive designs</p>
-                        <div class="product-footer">
-                            <span class="product-price">$30.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Care Instructions -->
+    <section class="shop-care-section" data-scroll-section>
+        <h2>How to Use & Care</h2>
+        <div class="care-steps">
+            <div class="care-step">
+                <div class="step-number">1</div>
+                <h3>Store</h3>
+                <p>Keep in freezer until ready. Thaw at room temperature for 30 minutes before use.</p>
+            </div>
+            <div class="care-step">
+                <div class="step-number">2</div>
+                <h3>Prepare</h3>
+                <p>Apply to clean, dry skin. Gently exfoliate beforehand for best results.</p>
+            </div>
+            <div class="care-step">
+                <div class="step-number">3</div>
+                <h3>Apply</h3>
+                <p>Create your design. Take your time - this is a meditation in artistry.</p>
+            </div>
+            <div class="care-step">
+                <div class="step-number">4</div>
+                <h3>Wait</h3>
+                <p>Leave on for 4-6 hours (or overnight). The longer, the deeper the stain.</p>
+            </div>
+            <div class="care-step">
+                <div class="step-number">5</div>
+                <h3>Seal</h3>
+                <p>Apply lemon-sugar mixture for a richer, longer-lasting stain.</p>
+            </div>
+            <div class="care-step">
+                <div class="step-number">6</div>
+                <h3>Reveal</h3>
+                <p>Gently scrape off. Avoid water for 12-24 hours. Watch the magic deepen.</p>
+            </div>
+        </div>
+    </section>
 
-                <!-- Product 7 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Aftercare Kit</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Aftercare Kit</h3>
-                        <p class="product-description">Keep your henna design vibrant and long-lasting</p>
-                        <div class="product-footer">
-                            <span class="product-price">$18.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 8 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Gift Card</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Digital Gift Card</h3>
-                        <p class="product-description">Perfect gift for henna lovers and enthusiasts</p>
-                        <div class="product-footer">
-                            <span class="product-price">$50.00</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
+    <!-- Purchase Section -->
+    <section class="shop-purchase-section">
+        <div class="purchase-container">
+            <div class="purchase-header">
+                <h2>Ready to Create?</h2>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(47 reviews)</span>
                 </div>
             </div>
 
-            <!-- Shop Info Section -->
-            <div class="shop-info">
-                <div class="info-card">
-                    <h3>Quality Guarantee</h3>
-                    <p>All products are made with natural, organic ingredients and tested for quality</p>
-                </div>
-                <div class="info-card">
-                    <h3>Fast Shipping</h3>
-                    <p>Orders processed within 1-2 business days with tracking included</p>
-                </div>
-                <div class="info-card">
-                    <h3>Secure Checkout</h3>
-                    <p>Safe and secure payment processing for your peace of mind</p>
+            <div class="purchase-price">
+                <span class="price-amount">$12.00</span>
+                <span class="price-label">per cone</span>
+            </div>
+
+            <div class="purchase-quantity">
+                <label>Quantity</label>
+                <div class="quantity-controls">
+                    <button type="button" class="qty-btn" id="decreaseQty">−</button>
+                    <input type="number" id="quantity" value="1" min="1" max="20" readonly>
+                    <button type="button" class="qty-btn" id="increaseQty">+</button>
                 </div>
             </div>
 
-            <!-- Newsletter -->
-            <div class="newsletter-section">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to receive updates on new products and exclusive offers</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="cta-button">Subscribe</button>
-                </form>
+            <div class="purchase-total">
+                <span>Total</span>
+                <span class="total-price">$<span id="totalPrice">12.00</span></span>
+            </div>
+
+            <button class="purchase-btn" id="checkoutButton">
+                <span>Buy Now</span>
+            </button>
+
+            <div class="purchase-badges">
+                <span>Secure checkout</span>
+                <span>Ships in 2-3 days</span>
+                <span>Easy returns</span>
             </div>
         </div>
     </section>
@@ -213,12 +216,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Henna By Divya. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="shop-scroll-animation.js"></script>
+    <script src="shop-checkout.js"></script>
     <script src="gallery-loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

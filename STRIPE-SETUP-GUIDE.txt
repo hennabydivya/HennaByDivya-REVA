@@ -1,0 +1,89 @@
+💳 STRIPE PAYMENT SETUP GUIDE
+================================
+
+Your shop page is ready! Now let's connect Stripe for payments.
+
+📋 OPTION 1: STRIPE PAYMENT LINKS (EASIEST - RECOMMENDED)
+----------------------------------------------------------
+
+This is the simplest way to accept payments without any backend code!
+
+Step 1: Create a Stripe Account
+   → Go to: https://stripe.com/
+   → Click "Start now" and create your account
+   → Verify your email and complete business information
+
+Step 2: Create a Product
+   → Log into Stripe Dashboard: https://dashboard.stripe.com/
+   → Click "Products" in the left menu
+   → Click "Add product"
+   → Fill in:
+      - Name: Premium Henna Cone
+      - Price: $12.00 USD (or your price)
+      - Upload product image
+
+Step 3: Create a Payment Link
+   → In your product page, click "Create payment link"
+   → Customize options (quantity, success message, etc.)
+   → Click "Create link"
+   → Copy the payment link (looks like: https://buy.stripe.com/xxxxx)
+
+Step 4: Add to Your Website
+   → Open: shop-checkout.js
+   → Find the section that says "STRIPE PAYMENT LINKS"
+   → Uncomment that code (remove the /* and */)
+   → Paste your payment link
+   → Comment out the regular checkout code above it
+
+Done! Your shop is now live! 🎉
+
+
+📋 OPTION 2: STRIPE CHECKOUT (ADVANCED)
+----------------------------------------
+
+This requires setting up a backend server. Only use if you're comfortable with coding.
+
+Step 1-2: Same as Option 1 (Create account and get API keys)
+
+Step 3: Get Your API Keys
+   → In Stripe Dashboard, go to "Developers" → "API keys"
+   → Copy your "Publishable key" (starts with pk_test_ or pk_live_)
+   → Open: shop-checkout.js
+   → Replace 'pk_test_YOUR_KEY_HERE' with your actual key
+
+Step 4: Set Up Backend
+   → You'll need a server (Node.js, PHP, Python, etc.)
+   → Create an endpoint: /create-checkout-session
+   → Follow Stripe's documentation: https://stripe.com/docs/checkout/quickstart
+
+
+💡 TESTING
+----------
+
+Stripe starts in TEST mode automatically.
+
+Test Card Numbers:
+• Success: 4242 4242 4242 4242
+• Expiry: Any future date
+• CVC: Any 3 digits
+• ZIP: Any 5 digits
+
+When ready to accept real payments:
+→ Toggle to "Live mode" in Stripe Dashboard
+→ Replace test API keys with live keys
+
+
+📧 NEED HELP?
+-------------
+
+• Stripe Documentation: https://stripe.com/docs
+• Stripe Support: https://support.stripe.com/
+• Video Tutorials: Search "Stripe Payment Links tutorial" on YouTube
+
+
+🎯 RECOMMENDATION
+-----------------
+
+For your simple use case (1 product), I strongly recommend OPTION 1 
+(Payment Links). It takes 5 minutes to set up and requires zero coding!
+

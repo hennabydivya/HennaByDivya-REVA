@@ -1,0 +1,29 @@
+📦 SHOP PRODUCT IMAGES FOLDER
+================================
+
+Place your henna cone product images in this folder.
+
+REQUIRED IMAGES:
+---------------
+1. henna-cone-main.jpg  - Main product image (front view)
+2. henna-cone-2.jpg     - Second view (side/detail)
+3. henna-cone-3.jpg     - Third view (packaging/usage)
+
+IMAGE GUIDELINES:
+-----------------
+• Format: JPG or PNG
+• Size: 1000x1000 pixels (square)
+• Quality: High resolution
+• Background: Clean, white or neutral
+• Lighting: Bright and clear
+
+TIPS FOR GREAT PRODUCT PHOTOS:
+-------------------------------
+✓ Use natural lighting
+✓ Show the product from different angles
+✓ Include a lifestyle shot (someone using it)
+✓ Keep backgrounds simple and clean
+✓ Ensure colors are accurate
+
+After adding your images, the shop page will automatically display them!
+
