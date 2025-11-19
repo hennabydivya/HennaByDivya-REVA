@@ -1,0 +1,79 @@
+📁 COMPLETE GALLERY FOLDER STRUCTURE
+═══════════════════════════════════════════════════════════
+
+gallery/
+│
+├── 📂 mosaic/                    (Home Page Mosaic Gallery)
+│   ├── mosaic-1.jpg
+│   ├── mosaic-2.jpg
+│   ├── mosaic-3.jpg
+│   └── ... up to mosaic-24.jpg
+│
+├── 📂 portfolio/                 (Work Page Gallery)
+│   │
+│   ├── 📂 bridal/               (Bridal category)
+│   │   ├── bridal-1.jpg
+│   │   ├── bridal-2.jpg
+│   │   └── bridal-3.jpg
+│   │
+│   ├── 📂 traditional/          (Traditional category)
+│   │   ├── traditional-1.jpg
+│   │   ├── traditional-2.jpg
+│   │   └── traditional-3.jpg
+│   │
+│   ├── 📂 contemporary/         (Contemporary category)
+│   │   ├── contemporary-1.jpg
+│   │   ├── contemporary-2.jpg
+│   │   └── contemporary-3.jpg
+│   │
+│   ├── 📂 special/              (Special Events category)
+│   │   ├── special-1.jpg
+│   │   ├── special-2.jpg
+│   │   └── special-3.jpg
+│   │
+│   └── OR put all here:
+│       ├── portfolio-1.jpg
+│       ├── portfolio-2.jpg
+│       └── portfolio-3.jpg
+│
+├── 📂 products/                  (Shop Page Products)
+│   ├── product-1.jpg
+│   ├── product-2.jpg
+│   ├── product-3.jpg
+│   └── ... up to product-8.jpg
+│
+└── 📂 about/                     (About Page Portrait)
+    └── portrait.jpg
+
+
+═══════════════════════════════════════════════════════════
+TWO WAYS TO ORGANIZE PORTFOLIO IMAGES:
+═══════════════════════════════════════════════════════════
+
+OPTION 1 - SIMPLE (All in one folder)
+--------------------------------------
+gallery/portfolio/
+├── portfolio-1.jpg
+├── portfolio-2.jpg
+├── portfolio-3.jpg
+└── ...
+
+
+OPTION 2 - ORGANIZED (Sorted by category)
+------------------------------------------
+gallery/portfolio/
+├── bridal/
+│   ├── bridal-1.jpg
+│   └── bridal-2.jpg
+├── traditional/
+│   ├── traditional-1.jpg
+│   └── traditional-2.jpg
+├── contemporary/
+│   └── contemporary-1.jpg
+└── special/
+    └── special-1.jpg
+
+
+Both ways work! Choose what's easier for you.
+═══════════════════════════════════════════════════════════
+

@@ -1,0 +1,10 @@
+🛍️ PRODUCT IMAGES
+
+Drop your product photos here.
+These will appear on the Shop page.
+
+Name your files: product-1.jpg, product-2.jpg, product-3.jpg, etc.
+
+You need 8 product images.
+Recommended size: 600×600px
+

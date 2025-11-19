@@ -1,0 +1,9 @@
+📸 DROP YOUR MOSAIC GALLERY IMAGES HERE
+
+Name your files: mosaic-1.jpg, mosaic-2.jpg, mosaic-3.jpg, etc.
+
+You need 24 images total for the home page mosaic.
+
+Supported formats: .jpg, .jpeg, .png, .webp
+Recommended size: 800×800px
+

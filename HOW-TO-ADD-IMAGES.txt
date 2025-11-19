@@ -1,0 +1,78 @@
+═══════════════════════════════════════════════════════════
+   📸 HOW TO ADD YOUR IMAGES - SUPER SIMPLE!
+═══════════════════════════════════════════════════════════
+
+STEP 1: Name your image files
+───────────────────────────────────────────────────────────
+Home Page Mosaic:
+  mosaic-1.jpg, mosaic-2.jpg, ... mosaic-24.jpg
+
+Work Page Gallery (Option A - Simple):
+  portfolio-1.jpg, portfolio-2.jpg, ... portfolio-15.jpg
+
+Work Page Gallery (Option B - Organized by category):
+  bridal-1.jpg, bridal-2.jpg (in gallery/portfolio/bridal/)
+  traditional-1.jpg, traditional-2.jpg (in gallery/portfolio/traditional/)
+  contemporary-1.jpg, contemporary-2.jpg (in gallery/portfolio/contemporary/)
+  special-1.jpg, special-2.jpg (in gallery/portfolio/special/)
+
+Shop Products:
+  product-1.jpg, product-2.jpg, ... product-8.jpg
+
+About Portrait:
+  portrait.jpg
+
+
+STEP 2: Put them in the right folder
+───────────────────────────────────────────────────────────
+gallery/
+├── mosaic/       ← Home page images go here
+├── portfolio/    ← Work page images go here
+│   ├── bridal/         (optional: organize by category)
+│   ├── traditional/    (or put all in main portfolio/ folder)
+│   ├── contemporary/
+│   └── special/
+├── products/     ← Product images go here
+└── about/        ← Your portrait goes here
+
+
+STEP 3: Refresh your website
+───────────────────────────────────────────────────────────
+That's it! The images will automatically appear.
+
+
+═══════════════════════════════════════════════════════════
+QUICK TIPS:
+═══════════════════════════════════════════════════════════
+✓ Use .jpg, .jpeg, .png, or .webp formats
+✓ Keep file sizes under 500KB (compress at tinypng.com)
+✓ Recommended image sizes:
+  - Mosaic: 800×800px
+  - Portfolio: 600×600px
+  - Products: 600×600px
+  - Portrait: 800×800px or larger
+
+✓ If you don't have all images yet, no problem!
+  Missing images will show placeholders until you add them.
+
+✓ Want to change an image? Just replace the file with
+  the same name and refresh!
+
+
+═══════════════════════════════════════════════════════════
+EXAMPLE:
+═══════════════════════════════════════════════════════════
+You have 10 henna photos. Name them:
+  mosaic-1.jpg
+  mosaic-2.jpg
+  ...
+  mosaic-10.jpg
+
+Drop them all in: gallery/mosaic/
+
+Open index.html in your browser → See your photos! ✨
+
+
+Need more help? Check gallery/README.md for detailed info!
+═══════════════════════════════════════════════════════════
+

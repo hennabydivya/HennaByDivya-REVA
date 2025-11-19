@@ -1,0 +1,18 @@
+# Backup folders
+gallery/mosaic-backup-original/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*~
+

@@ -1,0 +1,9 @@
+👤 YOUR PORTRAIT
+
+Drop your portrait photo here.
+This will appear on the About page.
+
+Name it: portrait.jpg (or .png, .jpeg, .webp)
+
+Recommended size: 800×800px or larger
+

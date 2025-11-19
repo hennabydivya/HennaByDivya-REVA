@@ -1,0 +1,122 @@
+═══════════════════════════════════════════════════════════
+  HOW TO HOST YOUR WEBSITE ON GITHUB - STEP BY STEP
+═══════════════════════════════════════════════════════════
+
+STEP 1: INSTALL GITHUB DESKTOP
+───────────────────────────────────────────────────────────
+✓ Download page should be open in your browser
+✓ Click "Download for Windows (64bit)"
+✓ Run the downloaded file (GitHubDesktopSetup-x64.exe)
+✓ It will install automatically (no setup wizard needed!)
+✓ GitHub Desktop will open when installation is complete
+
+
+STEP 2: SIGN IN TO GITHUB
+───────────────────────────────────────────────────────────
+When GitHub Desktop opens:
+
+Option A - If you have a GitHub account:
+  ✓ Click "Sign in to GitHub.com"
+  ✓ Enter your username/email and password
+  ✓ Click "Sign in"
+
+Option B - If you DON'T have a GitHub account:
+  ✓ Go to: https://github.com/signup
+  ✓ Create a free account
+  ✓ Then come back and sign in to GitHub Desktop
+
+
+STEP 3: ADD YOUR WEBSITE TO GITHUB DESKTOP
+───────────────────────────────────────────────────────────
+In GitHub Desktop:
+  ✓ Click "File" → "Add local repository"
+  ✓ Click "Choose..." button
+  ✓ Navigate to: C:\Users\jigar\Desktop\Henna By Divya
+  ✓ Click "Select Folder"
+
+If it says "This directory does not appear to be a Git repository":
+  ✓ Click "create a repository" link
+  ✓ Keep the default settings
+  ✓ Click "Create Repository"
+
+
+STEP 4: PUBLISH YOUR WEBSITE TO GITHUB
+───────────────────────────────────────────────────────────
+In GitHub Desktop:
+  ✓ Click the big blue "Publish repository" button at the top
+  ✓ Repository name: henna-by-divya
+  ✓ Description: My henna art portfolio website
+  ✓ UNCHECK "Keep this code private" (important for free hosting!)
+  ✓ Click "Publish Repository"
+
+Wait a few seconds... Done! ✨
+
+
+STEP 5: ENABLE GITHUB PAGES (Make Website Live)
+───────────────────────────────────────────────────────────
+  ✓ In GitHub Desktop, click "Repository" → "View on GitHub"
+  ✓ This opens your repo in the browser
+  ✓ Click "Settings" tab (top of page)
+  ✓ Click "Pages" in the left sidebar
+  ✓ Under "Source", select:
+    - Branch: main
+    - Folder: / (root)
+  ✓ Click "Save"
+  
+Wait 1-2 minutes for deployment...
+
+
+STEP 6: VIEW YOUR LIVE WEBSITE! 🎉
+───────────────────────────────────────────────────────────
+Your website will be live at:
+
+  https://[your-github-username].github.io/henna-by-divya/
+
+For example, if your username is "divyahenna", it will be:
+  https://divyahenna.github.io/henna-by-divya/
+
+Refresh the Settings → Pages after a minute to see the link!
+
+
+═══════════════════════════════════════════════════════════
+UPDATING YOUR WEBSITE LATER
+═══════════════════════════════════════════════════════════
+
+When you want to update your website (add new images, change text):
+
+1. Make your changes in the files
+2. Open GitHub Desktop
+3. You'll see all changed files listed
+4. Add a summary (e.g., "Added new photos")
+5. Click "Commit to main"
+6. Click "Push origin" (top right)
+7. Wait 1-2 minutes - your site updates automatically!
+
+
+═══════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════
+
+Q: My images don't show on the live site
+A: Make sure all images are in the gallery folder and uploaded
+
+Q: Changes aren't showing
+A: Wait 2-3 minutes, then hard refresh (Ctrl+Shift+R)
+
+Q: "This site can't be reached"
+A: Check Settings → Pages to make sure it's enabled
+   Wait a few minutes after enabling
+
+Q: I get a 404 error
+A: Make sure you're going to the correct URL with your username
+
+
+═══════════════════════════════════════════════════════════
+
+Need help? Just ask! 🚀
+
+Your website files are ready to go at:
+C:\Users\jigar\Desktop\Henna By Divya
+
+═══════════════════════════════════════════════════════════
+
