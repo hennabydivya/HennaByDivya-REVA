@@ -1,0 +1,28 @@
+═══════════════════════════════════════════════════════════
+  ABOUT PAGE CONTENT - EASY TO EDIT
+═══════════════════════════════════════════════════════════
+
+TITLE:
+Henna By Divya
+
+SUBTITLE:
+Where Tradition Meets Modern Artistry
+
+MAIN TEXT:
+Henna goes far beyond its ability to create temporary and striking designs on the skin; it is an artistic tool that unites cultures, inviting people to embrace connection and cherish their differences. It’s used to celebrate love, beauty and grace through special occasions, personal and cultural milestones, or to simply relish its artistic elegance. Henna’s ability to empower people through its trade and craft is admirable to say the least and we aspire to cultivate a brand which magnifies this notion of community and togetherness through artistic expression.
+
+The art of henna has been a passion for me since I was very young. I started doodling with a henna cone when I was only ten years old. For me, it was quite natural, and as a little girl growing up in India, I had the best of practical experience. From weddings to festivals, parties, and casual applications, I saw and learned the use of henna first-hand at multiple times. Growing up, I explored more and built on what I have been exposed to hone my skills. My art gained people’s attention, and I got invited by people to create designs for them for events. With time, I thought about the need to advance the whole experience from just a hobby into a part-time business. Believe me, I never really thought this would end up being a profession, but as it is, I am absolutely in love with it.
+I am fully committed to rolling out custom and creative designs for all uses, with a particular focus on brides and weddings. In line with my mission to Visualize, Create, and Innovate, I am confident of transforming stories as possible into well-drawn bridal henna.
+
+~ Divya
+═══════════════════════════════════════════════════════════
+TO UPDATE THIS TEXT:
+═══════════════════════════════════════════════════════════
+
+1. Edit the text above (keep it to 2-3 paragraphs for best look)
+2. Save this file
+3. Let me know - I'll update the website
+4. Then commit & push in GitHub Desktop
+
+═══════════════════════════════════════════════════════════
+

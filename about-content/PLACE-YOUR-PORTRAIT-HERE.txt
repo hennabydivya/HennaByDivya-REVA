@@ -1,0 +1,14 @@
+📸 YOUR PORTRAIT PHOTO GOES HERE
+
+Name your portrait photo: portrait.jpg (or .png, .jpeg, .webp)
+
+This image will appear on the About page.
+
+Recommended:
+- Size: 800×1000px or larger
+- Professional photo of you creating henna art
+- Good lighting
+- High quality
+
+Just drop your portrait file in this folder!
+

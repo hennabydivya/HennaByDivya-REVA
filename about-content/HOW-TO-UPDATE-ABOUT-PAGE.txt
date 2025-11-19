@@ -1,0 +1,65 @@
+═══════════════════════════════════════════════════════════
+  HOW TO UPDATE YOUR ABOUT PAGE
+═══════════════════════════════════════════════════════════
+
+This folder makes it SUPER EASY to update your About page!
+
+FOLDER STRUCTURE:
+─────────────────────────────────────────────────────────
+about-content/
+├── portrait.jpg              ← Your portrait photo
+├── about-text.txt           ← Your about text
+└── HOW-TO-UPDATE-ABOUT-PAGE.txt  ← This file
+
+
+═══════════════════════════════════════════════════════════
+TO UPDATE YOUR PORTRAIT PHOTO:
+═══════════════════════════════════════════════════════════
+
+1. Take or choose a professional photo of yourself
+2. Name it: portrait.jpg (or portrait.png, portrait.jpeg)
+3. Drop it in this folder: about-content/
+4. Done! The website automatically loads it
+
+RECOMMENDED:
+• Size: 800×1000px or larger
+• Professional quality
+• Good lighting
+• Shows you doing henna art (or a professional headshot)
+
+
+═══════════════════════════════════════════════════════════
+TO UPDATE YOUR ABOUT TEXT:
+═══════════════════════════════════════════════════════════
+
+1. Open: about-text.txt
+2. Edit the text (keep it 2-3 paragraphs for best look)
+3. Save the file
+4. Let me know - I'll update the HTML for you!
+
+
+═══════════════════════════════════════════════════════════
+AFTER MAKING CHANGES:
+═══════════════════════════════════════════════════════════
+
+1. Open GitHub Desktop
+2. You'll see your changed files listed
+3. Type a note: "Updated about page"
+4. Click "Commit to main"
+5. Click "Push origin"
+6. Wait 2 minutes - your site updates!
+
+
+═══════════════════════════════════════════════════════════
+TIPS FOR BEST LOOK:
+═══════════════════════════════════════════════════════════
+
+✓ Keep text concise (2-3 paragraphs)
+✓ Use high-quality portrait photo
+✓ Compress image before uploading (max 500KB)
+✓ Tell your story authentically
+✓ Focus on your passion and experience
+
+
+═══════════════════════════════════════════════════════════
+
