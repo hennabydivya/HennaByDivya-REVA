@@ -129,6 +129,76 @@ document.addEventListener('keydown', (e) => {
 
 // ===== Navbar stays transparent (removed scroll behavior) =====
 // Navbar now always stays transparent with gradient background
+// Force consistent navbar size on all pages
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+    const navContainer = document.querySelector('.nav-container');
+    const logo = document.querySelector('.logo');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    if (navbar && navContainer && logo) {
+        // Lock navbar dimensions AGGRESSIVELY
+        const lockNavbarSize = () => {
+            // Navbar
+            navbar.style.setProperty('height', '80px', 'important');
+            navbar.style.setProperty('min-height', '80px', 'important');
+            navbar.style.setProperty('max-height', '80px', 'important');
+            navbar.style.setProperty('transform', 'none', 'important');
+            navbar.style.setProperty('transition', 'none', 'important');
+            
+            // Nav Container
+            navContainer.style.setProperty('height', '80px', 'important');
+            navContainer.style.setProperty('min-height', '80px', 'important');
+            navContainer.style.setProperty('max-height', '80px', 'important');
+            navContainer.style.setProperty('transform', 'none', 'important');
+            
+            // Logo
+            logo.style.setProperty('font-size', '1.3rem', 'important');
+            logo.style.setProperty('transform', 'none', 'important');
+            logo.style.setProperty('line-height', '1', 'important');
+            
+            // Nav links
+            if (navLinks.length > 0) {
+                navLinks.forEach(link => {
+                    link.style.setProperty('font-size', '0.85rem', 'important');
+                    link.style.setProperty('transform', 'none', 'important');
+                });
+            }
+        };
+        
+        // Lock size immediately and repeatedly
+        lockNavbarSize();
+        setTimeout(lockNavbarSize, 100);
+        setTimeout(lockNavbarSize, 500);
+        setTimeout(lockNavbarSize, 1000);
+        
+        // Re-lock on scroll to prevent any changes
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            lockNavbarSize();
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(lockNavbarSize, 50);
+        }, { passive: true });
+        
+        window.addEventListener('resize', lockNavbarSize);
+        
+        // Create a MutationObserver to watch for any style changes
+        const observer = new MutationObserver(lockNavbarSize);
+        observer.observe(navbar, {
+            attributes: true,
+            attributeFilter: ['style', 'class']
+        });
+        observer.observe(navContainer, {
+            attributes: true,
+            attributeFilter: ['style', 'class']
+        });
+        observer.observe(logo, {
+            attributes: true,
+            attributeFilter: ['style', 'class']
+        });
+    }
+});
 
 // ===== Contact Form Handling =====
 const contactForm = document.querySelector('.contact-form');
